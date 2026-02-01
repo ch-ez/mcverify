@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400&display=swap");
 
 @font-face {
     font-family: "minecraft";
@@ -28,10 +28,17 @@
     font-style: italic;
 }
 
+body {
+  background-color: #f3f5de;
+}
 
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
+}
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -49,17 +56,21 @@
 
 .header {
             text-align: center;
-            font-family: "Londrina Outline", sans-serif;
+            font-family: "Londrina Solid", sans-serif;
     letter-spacing: 1.2px;
     word-spacing: 5px;
     padding-top: 12px;
     font-size: 32px;
+    font-weight: 400;
 }
 .paper {
          animation: squiggly-anim 1s infinite alternate;
 
 }
+.paper2 {
+  animation: squiggly-anim 2.2s infinite alternate;
 
+}
 
 @-webkit-keyframes squiggly-anim {
   0% {
