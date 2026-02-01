@@ -49,32 +49,49 @@
     font-size: 32px;
 }
 .paper {
-         animation: squigglevision 1s infinite alternate;
+         animation: squiggly-anim 1s infinite alternate;
 
 }
 
 
-    @keyframes squigglevision {
+@-webkit-keyframes squiggly-anim {
   0% {
-    filter: url("#turbulence-1");
+    filter: url("#squiggly-0");
   }
   25% {
-    filter: url("#turbulence-2");
+    filter: url("#squiggly-1");
   }
   50% {
-    filter: url("#turbulence-3");
+    filter: url("#squiggly-2");
   }
   75% {
-    filter: url("#turbulence-4");
+    filter: url("#squiggly-3");
   }
   100% {
-    filter: url("#turbulence-5");
+    filter: url("#squiggly-4");
   }
 }
-    
+@keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}
+
 
 
 /* cool video https://www.youtube.com/watch?v=lisZT8JIeKk 
  * also i skidded from https://css-tricks.com/books/greatest-css-tricks/squigglevision/
- * 
+ * https://codepen.io/lbebber/pen/KwGEQv?editors=0100
  * */
