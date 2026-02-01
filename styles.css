@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+
 @font-face {
     font-family: "minecraft";
     src: url("fonts/MinecraftRegular.otf") format("opentype");
@@ -26,6 +28,11 @@
     font-style: italic;
 }
 
+
+
+
+
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -42,7 +49,7 @@
 
 .header {
             text-align: center;
-            font-family: "minecraft", fantasy; 
+            font-family: "Londrina Outline", sans-serif;
     letter-spacing: 1.2px;
     word-spacing: 5px;
     padding-top: 12px;
