@@ -54,6 +54,43 @@ body {
     
 }
 
+
+
+.data-sources-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.data-source-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.4));
+  background-color: #f3f5de;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  height: 150px;
+  transform-origin: top center;
+}
+
+.data-source-img img {
+  width: auto;
+  height: auto;
+  max-width: 170px;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.data-source-img:hover {
+  filter: drop-shadow(0 0px 4px rgba(0, 0, 0, 0.6));
+}
+
+
 .header {
             text-align: center;
             font-family: "Londrina Solid", sans-serif;
@@ -64,13 +101,16 @@ body {
     font-weight: 400;
 }
 .paper {
-         animation: squiggly-anim 1s infinite alternate;
+         animation: squiggly-anim 2.2s infinite alternate;
 
 }
 .paper2 {
-  animation: squiggly-anim 2.2s infinite alternate;
+  animation: squiggly-anim 2000000000000s infinite alternate;
 
 }
+
+
+
 
 @-webkit-keyframes squiggly-anim {
   0% {
