@@ -28,7 +28,13 @@
     font-style: italic;
 }
 
+a:link:hover {
 
+  text-decoration: underline;
+  color: #1f89e0;
+  transition: color 0.3s ease-in-out;
+
+}
 
 body {
   background-color: #f3f5de;
