@@ -56,13 +56,21 @@ body {
 
 
   background-color: rgba(245, 243, 214, 0.5);
-  height: 30px;
+  height: 50px;
   border: 2px solid black;
   text-align: center;
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 1000;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.103));
 
+  transition: background-color 0.3s ease-in-out, drop-shadow 0.3s ease-in-out;
+
+
+}
+.head-nav:hover {
+  background-color: rgba(245, 243, 214, 0.8);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
 
 
 }
@@ -170,6 +178,7 @@ body {
 }
 
 .header {
+  margin-top: 100px;
   text-align: center;
   font-family: "Londrina Solid", sans-serif;
   letter-spacing: 1.2px;
