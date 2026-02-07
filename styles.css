@@ -1,31 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400&display=swap");
 
 @font-face {
-    font-family: "minecraft";
-    src: url("fonts/MinecraftRegular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "minecraft";
+  src: url("fonts/MinecraftRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "minecraft";
-    src: url("fonts/MinecraftBold.otf") format("opentype");
-    font-weight: bold;
-    font-style: normal;
+  font-family: "minecraft";
+  src: url("fonts/MinecraftBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "minecraft";
-    src: url("fonts/MinecraftItalic.otf") format("opentype");
-    font-weight: normal;
-    font-style: italic;
+  font-family: "minecraft";
+  src: url("fonts/MinecraftItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "minecraft";
-    src: url("fonts/MinecraftBoldItalic.otf") format("opentype");
-    font-weight: bold;
-    font-style: italic;
+  font-family: "minecraft";
+  src: url("fonts/MinecraftBoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
 }
 
 a:link:hover {
@@ -38,10 +38,34 @@ a:link:hover {
 
 body {
   background-color: #f3f5de;
-  animation: fade-in-anim 0.6s ease-in-out;
+  align-items: center;
 
 }
+.nav-wrapper {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
 
+}
+.head-nav {
+  border-radius: 24px;
+  width: 75%;
+
+
+  background-color: rgba(245, 243, 214, 0.5);
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 1000;
+
+
+
+}
 
 .icon-container {
   display: flex;
@@ -51,18 +75,27 @@ body {
 }
 
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+
 .main {
-    
-    
+
+  animation: fade-in-anim 0.6s ease-in-out;
+
 }
+
 .mcverify-container {
   display: flex;
   flex-direction: column;
@@ -79,6 +112,7 @@ body {
   animation: fade-in-anim 0.6s ease-in-out;
 
 }
+
 .mcverify-container:hover {
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
 }
@@ -120,12 +154,14 @@ body {
   transform: translateY(-5px);
 
 }
+
 @keyframes fade-in-anim {
   0% {
     opacity: 0;
     filter: blur(5%);
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -134,23 +170,25 @@ body {
 }
 
 .header {
-            text-align: center;
-            font-family: "Londrina Solid", sans-serif;
-    letter-spacing: 1.2px;
-    word-spacing: 5px;
-    padding-top: 12px;
-    font-size: 32px;
-    font-weight: 400;
+  text-align: center;
+  font-family: "Londrina Solid", sans-serif;
+  letter-spacing: 1.2px;
+  word-spacing: 5px;
+  padding-top: 12px;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 .header h6 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
 .paper {
-         animation: squiggly-anim 2.2s infinite alternate;
+  animation: squiggly-anim 2.2s infinite alternate;
 
 }
+
 .paper2 {
   animation: squiggly-anim 2000000000000s infinite alternate;
 
@@ -163,32 +201,41 @@ body {
   0% {
     filter: url("#squiggly-0");
   }
+
   25% {
     filter: url("#squiggly-1");
   }
+
   50% {
     filter: url("#squiggly-2");
   }
+
   75% {
     filter: url("#squiggly-3");
   }
+
   100% {
     filter: url("#squiggly-4");
   }
 }
+
 @keyframes squiggly-anim {
   0% {
     filter: url("#squiggly-0");
   }
+
   25% {
     filter: url("#squiggly-1");
   }
+
   50% {
     filter: url("#squiggly-2");
   }
+
   75% {
     filter: url("#squiggly-3");
   }
+
   100% {
     filter: url("#squiggly-4");
   }
